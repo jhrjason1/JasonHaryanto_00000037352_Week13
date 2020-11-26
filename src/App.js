@@ -1,25 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import uparrow from './up.png';
+import downarrow from './down.png';
+import clock from './jam.png';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+        <p className="Title">
+          <img src={clock} className="jam"></img>SIMPLE COUNTDOWN<img src={clock} className="jam"></img>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <img src={uparrow} className="arrow1"></img>
+        <img src={downarrow} className="arrow6"></img>
+        <img src={uparrow} className="arrow2"></img>
+        <img src={downarrow} className="arrow3"></img>
+        <img src={uparrow} className="arrow4"></img>
+        <img src={downarrow} className="arrow5"></img>
+        <button className="startbutton">START</button>
       </header>
     </div>
   );
 }
+
 
 export default App;
